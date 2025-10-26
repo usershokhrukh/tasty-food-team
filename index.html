@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tasty Food</title>
-  <link rel="stylesheet" href="./node_modules/remixicon/fonts/remixicon.css">
-  <link rel="stylesheet" href="./css/fonts.css">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty Food</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/remixicon/fonts/remixicon.css"
+    />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="wrapper">
+      <nav class="contain navbar">
+        <div class="navbar__wrapper">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a class="navbar__link" href=""> Home </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href=""> Menu </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href=""> About </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href=""> Shop </a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__right">
+          <i class="ri-search-line"></i>
+          <i class="ri-user-line"></i>
+          <i class="ri-shopping-bag-4-line"></i>
+        </div>
+        <div class="navbar__burger">
+          <div class="navbar__burger-items"></div>
+          <div class="navbar__burger-items"></div>
+          <div class="navbar__burger-items"></div>
+        </div>
+      </nav>
+      <div class="contain intro">
+        <div class="intro__left">
+          <h2 class="intro__title">Tasty Food <span>Collections</span></h2>
+          <p class="intro__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius sed
+            pharetra dictum neque massa congue
+          </p>
+          <div class="intro__box">
+            <button class="intro__button">See All</button>
+            <button class="intro__button">Menu</button>
+          </div>
+        </div>
+        <div class="intro__right">
+          <div class="intro__right-circle"></div>
+          <img src="./images/intro-burger.png" alt="">
+          <div class="intro__right-price">
+            <p class="intro__right-price-text">
+              $22.53
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+  </body>
 </html>

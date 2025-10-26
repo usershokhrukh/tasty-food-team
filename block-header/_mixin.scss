@@ -3,3 +3,10 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin button($bg, $color, $x-axis, $y-axis) {
+  background-color: $bg;
+  color: $color;
+  padding: $y-axis $x-axis;
+  border: none;
+}

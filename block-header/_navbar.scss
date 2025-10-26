@@ -1,0 +1,67 @@
+.navbar {
+  @include display();
+  justify-content: space-between;
+  padding: 67px 110px;
+
+  &__list {
+    @include display();
+    gap: 56px;
+  }
+
+  &__link {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25.5738px;
+    line-height: 42px;
+    /* or 165% */
+    color: #000000;
+
+    animation-name: link;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+    &:hover{
+      color: #90E051;
+    } 
+  }
+
+  &__right {
+    @include display();
+    gap: 10px;
+    
+    & i {
+      font-size: 25px;
+    }
+  }
+
+  &__burger {
+    @include display();
+    flex-direction: column;
+    gap: 5px;
+    display: none;
+  }
+
+  &__burger-items {
+    background-color: black;
+    width: 30px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 20px 0px;
+    width: 90%;
+    gap: 0% !important;
+    &__wrapper {
+      display: none;
+    }
+
+
+    &__burger {
+      display: flex;
+    }
+  }
+}
