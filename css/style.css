@@ -250,4 +250,345 @@ li {
     padding: 10px 20px;
     font-size: 10px;
   }
+}
+.proff {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.proff__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.proff__title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.9429px;
+  line-height: 21px;
+  /* identical to box height, or 133% */
+  color: #000000;
+}
+.proff__price {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26.5715px;
+  line-height: 32px;
+  /* identical to box height, or 120% */
+  color: #000000;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 100px 110px 100px 0px;
+}
+.menu__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+.menu__main-burger {
+  position: absolute;
+  left: -100px;
+}
+.menu__top-burger {
+  position: absolute;
+  top: 10%;
+  left: 70%;
+}
+.menu__burger {
+  position: absolute;
+  bottom: 15%;
+  left: 72%;
+  width: 100%;
+  max-width: 165px;
+}
+.menu__circle {
+  width: 600px;
+}
+.menu__div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -40px;
+  padding: 5px 30px;
+  background-color: #90E051;
+  border-radius: 10px;
+}
+.menu__div-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55.897px;
+  line-height: 66px;
+  color: #FFFFFF;
+}
+.menu__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  max-width: 680px;
+  height: 700px;
+  gap: 50px;
+  position: relative;
+  flex-direction: column;
+  background-color: #90E051;
+  padding: 30px 50px;
+  border-radius: 30px;
+  transition: all 1s ease-in-out;
+}
+.menu form {
+  position: relative;
+  display: none;
+}
+.menu form > i {
+  position: absolute;
+  top: 28%;
+  left: 5%;
+  width: 30px;
+}
+.menu__input {
+  padding: 10px 0px 10px 33px;
+  border-radius: 50px;
+  border: none;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.7873px;
+  line-height: 20px;
+  color: #6D6C6C;
+}
+.menu__button {
+  background-color: white;
+  color: #90E051;
+  padding: 12px 0px;
+  border: none;
+  position: absolute;
+  bottom: 10%;
+  z-index: 3;
+  width: 40%;
+  border-radius: 17px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22.3521px;
+  line-height: 26px;
+  letter-spacing: -0.025em;
+  word-spacing: 8px;
+  box-shadow: 0px 0px 1000px 100px #90E051;
+  color: #90E051;
+}
+.menu__button:hover {
+  opacity: 0.9;
+}
+.menu__button:active {
+  display: none;
+}
+.menu__cards-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 24px;
+  overflow-x: auto;
+}
+.menu__items-burger {
+  position: absolute;
+  left: 30%;
+  top: -30px;
+  width: 100px;
+}
+.menu__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  flex-direction: column;
+}
+.menu__cards-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.menu__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 240px;
+  flex-direction: column;
+  gap: 10px;
+  padding: 70px 25px 17px;
+  background-color: white;
+  border-radius: 30px;
+}
+.menu__items svg:nth-child(1) {
+  width: 26px;
+  color: #ffbf00;
+}
+.menu__items svg:nth-child(2) {
+  width: 34px;
+  height: 34px;
+  color: #90E051;
+}
+.menu__items-title {
+  width: 100%;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16.7873px;
+  line-height: 20px;
+  /* identical to box height */
+  letter-spacing: -0.025em;
+  color: #000000;
+}
+.menu__items-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.2047px;
+  letter-spacing: -0.025em;
+  color: #000000;
+}
+.menu__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5px;
+  justify-content: start;
+}
+.menu__box-grade {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.5964px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+.menu__bottom-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.menu__box-price {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19.5955px;
+  line-height: 23px;
+  /* identical to box height */
+  letter-spacing: -0.03em;
+  color: #90E051;
+}
+.menu__box-price span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (min-width: 500px) and (max-width: 1200px) {
+  .menu {
+    padding: 50px 0px;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .menu__left {
+    width: 100%;
+    gap: 20px;
+  }
+  .menu__main-burger {
+    display: none;
+  }
+  .menu__burger {
+    display: none;
+  }
+  .menu__div {
+    width: 100%;
+    position: static;
+  }
+  .menu__top-burger {
+    display: none;
+  }
+  .menu__circle {
+    width: 100%;
+    display: none;
+  }
+  .menu__right {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .menu {
+    padding: 50px 0px;
+    width: 90%;
+    gap: 20px;
+  }
+  .menu__left {
+    width: 100%;
+    gap: 20px;
+  }
+  .menu__main-burger {
+    display: none;
+  }
+  .menu__burger {
+    display: none;
+  }
+  .menu__div {
+    width: 100%;
+    position: static;
+  }
+  .menu__top-burger {
+    display: none;
+  }
+  .menu__circle {
+    width: 100%;
+    display: none;
+  }
+  .menu__right {
+    width: 100%;
+  }
+  .menu__button {
+    display: none;
+  }
+  .menu__items {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .menu__box {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .menu__items-burger {
+    left: 0px;
+  }
+  .menu__bottom-box {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
