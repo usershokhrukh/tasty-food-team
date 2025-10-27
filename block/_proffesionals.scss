@@ -1,0 +1,35 @@
+.proff {
+  @include display();
+  flex-wrap: wrap;
+  gap: 100px;
+  &__items {
+    @include display();
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__title {
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15.9429px;
+    line-height: 21px;
+    /* identical to box height, or 133% */
+
+    color: #000000;
+  }
+
+  &__price {
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26.5715px;
+    line-height: 32px;
+    /* identical to box height, or 120% */
+
+    color: #000000;
+
+  }
+}
