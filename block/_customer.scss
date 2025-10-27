@@ -1,0 +1,232 @@
+.customer {
+  @include display();
+  justify-content: space-between;
+  padding: 100px 110px;
+  gap: 50px;
+  &__left {
+    @include display();
+    width: 50%;
+    gap: 30px;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &__title {
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60.4566px;
+    line-height: 71px;
+    /* identical to box height, or 117% */
+    font-feature-settings: 'kern' off;
+
+    /* Gray 1 */
+    color: #333333;
+  }
+
+  &__text {
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20.1522px;
+    line-height: 30px;
+    /* or 150% */
+
+    /* Gray 3 */
+    color: #828282;
+  }
+
+  &__box {
+    @include display();
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__box-left {
+    @include display();
+    gap: 19px;
+  }
+
+  &__left-box-title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22.6712px;
+    line-height: 33px;
+    /* or 144% */
+
+    color: #90E051;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+  }
+
+  &__box-right {
+    @include display();
+    gap: 20px;
+  }
+
+  &__box-right > i {
+    font-size: 30px;
+  }
+
+  &__box-right > i:nth-child(1) {
+    color: #828282;
+  }
+
+  &__right {
+    @include display();
+    position: relative;
+    flex-direction: column;
+  
+    & img {
+      width: 100%;
+      max-width: 690px;
+    }
+
+    
+  }
+
+  &__right-box {
+    position: absolute;
+    left: -5%;
+    bottom: -100px;
+    width: 80%;
+    max-width: 550px;
+    @include display();
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    padding: 47px 37px;
+    background-color: white;
+    box-shadow: 0px 0px 300px -70px black;
+    border-radius: 5px;
+  }
+
+  &__right-box-top {
+    @include display();
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__right-box-title {
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25.1902px;
+    line-height: 35px;
+    /* identical to box height, or 140% */
+
+    /* Gray 1 */
+    color: #333333;
+
+
+  }
+
+  &__right-box-stars {
+    @include display();
+    gap: 8px;
+
+    & i {
+      font-size: 18px;
+      color: #90E051;
+    }
+  }
+
+
+
+}
+
+@media (max-width: 1200px) {
+  .customer {
+    flex-direction: column;
+    padding: 100px 0px;
+    width: 90%;
+
+    &__left {
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__title {
+      width: 100%;
+    }
+
+    &__right-box {
+      left: 10%;
+      top: 70%;
+      height: 300px;
+      padding: 0px 37px;
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+  .customer {
+
+    &__title {
+      font-size: 40px;
+      line-height: normal;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: normal;
+    }
+
+    &__box {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &__box-left {
+      flex-direction: column;
+
+      & img {
+        width: 60px;
+      }
+    }
+
+    &__left-box-title {
+      font-size: 16px;
+    }
+
+    &__box-right {
+
+      & i {
+        font-size: 18px;
+      }
+    }
+
+    &__right-box {
+      height: 500px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__right-box-top {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__right-box-title {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__right-box-stars {
+      width: 100%;
+      
+    }
+
+  }
+}
