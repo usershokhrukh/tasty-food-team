@@ -1,1 +1,1 @@
-we did it until 6 PM, but there commits 'now'
+we did it until 6 PM, but there are commits 'now'
